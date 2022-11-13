@@ -46,11 +46,9 @@
             <p class="header__paragraph">Monday - Friday (10:00 - 19:00)</p>
             <p class="header__paragraph">Saturday - Sunday (11:00 -18:00)</p>
           </div>
-          <div class="header__address">
-            <p class="header__paragraph">
-              200 Success Avenue, The Town of Practicum
-            </p>
-          </div>
+          <p class="header__paragraph">
+            200 Success Avenue, The Town of Practicum
+          </p>
         </div>
       </header>
       <main class="main">
@@ -140,8 +138,6 @@
             <div class="recipes__video-wrapper">
               <iframe
                 title="Aeropress recipe"
-                height="273"
-                width="480"
                 class="recipes__iframe"
                 src="https://www.youtube.com/embed/j6VlT_jUVPc"
                 allowfullscreen
@@ -154,8 +150,6 @@
             <div class="recipes__video-wrapper">
               <iframe
                 title="French press recipe"
-                height="273"
-                width="480"
                 class="recipes__iframe"
                 src="https://www.youtube.com/embed/st571DYYTR8"
                 allowfullscreen
@@ -169,47 +163,59 @@
         </section>
         <section class="reservation" id="reserve">
           <h2 class="reservation__title">Book a table</h2>
-          <form class="form reservation__form" action="#">
+          <form class="reservation__form form" action="#">
             <fieldset class="form__fieldset">
-              <label class="form__label" for="name">Name *</label>
-              <input
-                class="form__input"
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Full Name"
-              />
-              <label class="form__label" for="guests">Number of guests *</label>
-              <input
-                class="form__input"
-                type="number"
-                name="guests"
-                id="guests"
-                placeholder="1-8"
-                min="1"
-                max="8"
-              />
-              <label class="form__label" for="time">Date & time *</label>
-              <input class="form__input" type="date" name="time" id="time" />
-              <label class="form__label" for="email">Your email *</label>
-              <input
-                class="form__input"
-                type="email"
-                name="email"
-                id="email"
-                placeholder="email@email.com"
-              />
+              <label class="form__label"
+                >Name *
+                <input
+                  class="form__input"
+                  type="text"
+                  name="name"
+                  placeholder="Full Name"
+                  required
+                />
+              </label>
+              <label class="form__label"
+                >Number of guests *
+                <input
+                  class="form__input"
+                  type="number"
+                  name="guests"
+                  placeholder="1-8"
+                  min="1"
+                  max="8"
+                  required
+                />
+              </label>
+              <label class="form__label"
+                >Date & time *
+                <input class="form__input" type="date" name="time" required />
+              </label>
+              <label class="form__label"
+                >Your email *
+                <input
+                  class="form__input"
+                  type="email"
+                  name="email"
+                  placeholder="email@email.com"
+                  required
+                />
+              </label>
             </fieldset>
-            <button class="form__button">Book a table</button>
-            <div class="form-checkbox-wrapper">
-              <input
-                class="form__checkbox"
-                type="checkbox"
-                name="checkbox"
-                id="checkbox"
-              />
-              <label for="checkbox">I agree with the terms of use</label>
-            </div>
+            <fieldset class="form__fieldset">
+              <button class="form__button">Book a table</button>
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <label class="form__label form__label_row"
+                >I agree with the terms of use
+                <input
+                  class="form__checkbox"
+                  type="checkbox"
+                  name="checkbox"
+                  required
+                />
+              </label>
+            </fieldset>
           </form>
         </section>
         <section class="about" id="contacts">

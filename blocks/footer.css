@@ -18,8 +18,12 @@
 }
 
 .footer__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .footer__social-heading {
@@ -30,19 +34,15 @@
   line-height: 20px;
 }
 
-.footer__list-item:first-child {
-  margin-bottom: 16px;
-}
-
 .footer__social-icon {
-  position: relative;
-  top: 2.5px;
   margin-right: 10px;
   width: 16px;
   height: 16px;
 }
 
 .footer__social-link {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: white;
   font-family: "Inter", arial, sans-serif;

@@ -31,49 +31,9 @@
 .menu__cards {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
   margin: 100px auto 0 auto;
   max-width: 1300px;
   column-gap: 100px;
   row-gap: 100px;
-}
-
-.card {
-  max-width: 600px;
-  flex-basis: 45%;
-}
-
-.card:last-child {
-  margin: 0px auto;
-}
-
-.card__list {
-  list-style: none;
-  padding: 0;
-}
-
-.card__title {
-  margin-bottom: 32px;
-  font-family: "Inter", arial, sans-serif;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 30px;
-}
-
-.card__list-item {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 16px;
-  font-family: "Noto Serif", "Times New Roman", serif;
-  font-size: 16px;
-  line-height: 20px;
-  column-gap: 10px;
-}
-
-.card__list-item:last-child {
-  margin-bottom: 0;
-}
-
-.card__list-divider {
-  border-bottom: 1px solid white;
-  flex-grow: 1;
 }

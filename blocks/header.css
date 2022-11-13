@@ -1,7 +1,7 @@
 .header {
   position: relative;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   background-color: #ffffff;
   background-image: url("../images/background_header.svg");
   background-size: cover;
@@ -54,32 +54,18 @@
 }
 
 .header__paragraph-wrapper {
-  position: absolute;
-  bottom: 40px;
   display: flex;
-  flex-flow: row wrap;
   justify-content: space-between;
-  margin-left: 80px;
+  align-items: flex-end;
   z-index: 1;
   font-family: "Inter", Arial, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  margin: auto;
-  width: 100%;
   color: #6f6f6f;
+  margin: auto 80px 40px;
 }
 
 .header__paragraph {
   margin: 0;
-}
-
-.header__hours {
-  margin-left: 80px;
-}
-
-.header__address {
-  display: flex;
-  align-items: flex-end;
-  margin-right: 80px;
 }
